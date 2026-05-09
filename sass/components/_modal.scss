@@ -24,7 +24,7 @@
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   width: 420px;
-  background: var(--color-white);
+  background: $color-white;
   border-radius: 12px;
   padding: 30px;
   box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
@@ -37,7 +37,7 @@
 .modal_p {
   font-size: 18px;
   font-weight: 600;
-  color: var(--color-dark);
+  color: $color-dark;
   margin-bottom: 20px;
 }
 
@@ -52,11 +52,11 @@
   height: 30px;
   border-radius: 50%;
   border: none;
-  background: var(--color-light-gray);
+  background: $color-light-gray;
   cursor: pointer;
   transition: 0.2s;
 }
 
 .btn_close:hover {
-  background: var(--color-gray-blue);
+  background: $color-gray-blue;
 }

@@ -1,7 +1,7 @@
 .team {
   padding: 60px 0;
   text-align: center;
-  background-color: var(--color-bg);
+  background-color: $color-bg;
 }
 
 .team_title {
@@ -43,7 +43,7 @@
 
 .team_number_role {
   font-size: 16px;
-  color: var(--color-mid-gray);
+  color: $color-mid-gray;
   line-height: 1.6;
 }
 
@@ -67,6 +67,6 @@
 }
 
 .team_socials li:hover{
-  background: var(--color-blue);
-  fill: var(--color-white);
+  background: $color-blue;
+  fill: $color-white;
 }

@@ -21,13 +21,13 @@ header>.container {
 
 .gmail,
 .number {
-  color: var(--color-mid-gray);
+  color: $color-mid-gray;
   text-decoration: none;
 }
 
 .gmail:hover,
 .number:hover {
-  color: var(--color-blue);
+  color: $color-blue;
 }
 
 .icon_header {
@@ -42,7 +42,7 @@ header>.container {
 }
 
 .nav_list_item a {
-  color: var(--color-black);
+  color: $color-black;
   position: relative;
   padding-bottom: 2px;
 }
@@ -54,19 +54,19 @@ header>.container {
   right: 0;
   bottom: -21px;
   height: 2px;
-  background-color: var(--color-blue);
+  background-color: $color-blue;
   transform: scaleX(0);
   transform-origin: center;
   transition: transform 0.2s ease;
 }
 
 .nav_list_item a {
-  color: var(--color-black);
+  color: $color-black;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .nav_list_item a:hover {
-  color: var(--color-blue);
+  color: $color-blue;
 }
 
 .nav_list_item a.nav-link--active::after {
@@ -74,12 +74,12 @@ header>.container {
 }
 
 .header_contackt a {
-  color: var(--color-mid-gray);
+  color: $color-mid-gray;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header_contackt a:hover{
-  color: var(--color-blue);
+  color: $color-blue;
 }
 
 .header_contackt {
@@ -89,12 +89,12 @@ header>.container {
 }
 
 .header_contackt_item {
-  color: black;
+  color: $color-black;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header_contackt_item:hover {
-  color: blue;
+  color: $color-blue;
 }
 
 .gmail,
