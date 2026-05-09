@@ -1,0 +1,107 @@
+.logo {
+    font-family: "Raleway", sans-serif;
+}
+.logo_footer {
+    font-family: "Raleway", sans-serif;
+}
+
+header>.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.header_contackt_item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.gmail,
+.number {
+  color: var(--color-mid-gray);
+  text-decoration: none;
+}
+
+.gmail:hover,
+.number:hover {
+  color: var(--color-blue);
+}
+
+.icon_header {
+  order: -1;
+  fill: currentColor;
+}
+
+.nav_list {
+  display: flex;
+  gap: 70px;
+  flex-wrap: wrap;
+}
+
+.nav_list_item a {
+  color: var(--color-black);
+  position: relative;
+  padding-bottom: 2px;
+}
+
+.nav_list_item a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -21px;
+  height: 2px;
+  background-color: var(--color-blue);
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform 0.2s ease;
+}
+
+.nav_list_item a {
+  color: var(--color-black);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.nav_list_item a:hover {
+  color: var(--color-blue);
+}
+
+.nav_list_item a.nav-link--active::after {
+  transform: scaleX(1);
+}
+
+.header_contackt a {
+  color: var(--color-mid-gray);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.header_contackt a:hover{
+  color: var(--color-blue);
+}
+
+.header_contackt {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.header_contackt_item {
+  color: black;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.header_contackt_item:hover {
+  color: blue;
+}
+
+.gmail,
+.number {
+  color: inherit;
+}
+
+.icon_header {
+  fill: currentColor;
+}
