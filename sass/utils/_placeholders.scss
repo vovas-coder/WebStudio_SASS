@@ -1,0 +1,81 @@
+// Mixins for repeated styles
+
+// Transition mixins
+@mixin transition($property: all, $duration: 250ms, $ease: cubic-bezier(0.4, 0, 0.2, 1)) {
+  transition: $property $duration $ease;
+}
+
+@mixin transition-color {
+  @include transition(color);
+}
+
+@mixin transition-bg {
+  @include transition(background-color);
+}
+
+@mixin transition-opacity {
+  @include transition(opacity);
+}
+
+@mixin transition-transform {
+  @include transition(transform);
+}
+
+// Button mixin
+@mixin button-base {
+  background-color: $color-blue;
+  color: $color-white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  @include transition();
+}
+
+@mixin button-hover {
+  &:hover {
+    background-color: darken($color-blue, 10%);
+  }
+}
+
+// Flexbox mixins
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin flex-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+// Box shadow mixin
+@mixin box-shadow {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+// Border radius mixins
+@mixin border-radius-small {
+  border-radius: 4px;
+}
+
+@mixin border-radius-circle {
+  border-radius: 50%;
+}
+
+// Input mixin
+@mixin input-base {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid $color-light-gray;
+  @include border-radius-small;
+  outline: none;
+  @include transition();
+}
+
+@mixin input-focus {
+  &:focus {
+    border-color: $color-blue;
+  }
+}

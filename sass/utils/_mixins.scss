@@ -1,0 +1,30 @@
+// Placeholders for repeated styles
+
+// Button placeholder
+%button {
+  @include button-base;
+  @include button-hover;
+}
+
+// Transition placeholders
+%transition-color {
+  @include transition-color;
+}
+
+%transition-bg {
+  @include transition-bg;
+}
+
+// Flex placeholders
+%flex-center {
+  @include flex-center;
+}
+
+%flex-between {
+  @include flex-between;
+}
+
+// Box shadow placeholder
+%box-shadow {
+  @include box-shadow;
+}

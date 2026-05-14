@@ -23,9 +23,9 @@ input[type="email"] {
   width: 100%;
   padding: 10px 10px 10px 35px;
   border: 1px solid $color-light-gray;
-  border-radius: 6px;
+  @include border-radius-small;
   outline: none;
-  transition: 0.2s;
+  @include transition();
 }
 
 input:focus {
@@ -66,14 +66,10 @@ input:focus {
 }
 
 button[type="submit"] {
-  background: $color-blue;
-  color: $color-white;
-  border: none;
+  @include button-base;
   padding: 12px;
-  border-radius: 6px;
-  cursor: pointer;
   font-weight: 500;
-  transition: 0.2s;
+  @include transition();
 }
 
 button[type="submit"]:hover {
